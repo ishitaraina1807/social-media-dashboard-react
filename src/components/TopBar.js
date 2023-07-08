@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 export default function TopBar() {
   const [myStyle, setMyStyle] = useState({})
@@ -25,25 +25,24 @@ export default function TopBar() {
         })
        }
       }
-      const [bodyColor, setBodyColor] = useState('');
-      const color = "hsl(230, 17%, 14%)";
-      const color1 = "hsl(0, 0%, 100%);"
-       const changeColor = () => {
-        if (bodyColor.color === "white"){
-          setBodyColor(color1);
-        }
-        else{
-                  setBodyColor(color);
-        
-        }
-       
-      };
-      
+  const [bodyColor, setBodyColor] = useState("white");
+  const color = "hsl(230, 17%, 14%)";
 
-  
+  const changeColor = () => {
+    if (bodyColor === "white") {
+      setBodyColor(color);
+    } else {
+      setBodyColor("white");
+    }
+  };
+
+  useEffect(() => {
+    document.body.style.backgroundColor = bodyColor;
+  }, [bodyColor]);
+      
   return (
     <>
-      <nav className="topbar" style={myStyle}>
+      <nav className="topbar">
         <h1 style={myStyle} >Social Media Dashboard</h1>
         <span>Total Followers: 23,004</span>
         <hr />
