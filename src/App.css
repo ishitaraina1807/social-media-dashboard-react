@@ -154,6 +154,7 @@ place-content: center;
   gap: 5px;
   margin-top: 10px;
   font-size: 1.2rem;
+  align-items: center;
 }
 .twitter-card{
   margin-left: 2rem;
@@ -198,5 +199,6 @@ place-content: center;
   color: var(--brightred);
   gap: 5px;
   margin-top: 10px;
+  align-items: center;
   font-size: 1.2rem;
 }
