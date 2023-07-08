@@ -33,8 +33,11 @@
 }
 
 body {
-  padding: 2rem;
   font-family: 'Open Sans', sans-serif;
+  background-color: white;
+}
+.topbar{
+  margin: 2rem;
 }
 
 .switch {
@@ -108,6 +111,8 @@ input:checked+.slider:before {
  color: var(--light-text1);
 }
 .fb-card{
+  margin-left: 2rem;
+  margin-right: 2rem;
   background-color: var(--light-card);
   height: 22vh;
   margin-top: 30px;
@@ -119,6 +124,7 @@ input:checked+.slider:before {
 .username{
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 10px;
   font-weight: bolder;
   color: var(--light-text1);
@@ -150,6 +156,8 @@ place-content: center;
   font-size: 1.2rem;
 }
 .twitter-card{
+  margin-left: 2rem;
+  margin-right: 2rem;
   background-color: var(--light-card);
   height: 22vh;
   margin-top: 30px;
@@ -159,6 +167,8 @@ place-content: center;
   border-top: 4px solid var(--twitter) ;
 }
 .ig-card{
+  margin-left: 2rem;
+  margin-right: 2rem;
   background-color: var(--light-card);
   height: 22vh;
   margin-top: 30px;
@@ -170,6 +180,8 @@ place-content: center;
   border-image-source: linear-gradient(to right, var(--instagram-start), var(--toggle-bg-end));
 }
 .yt-card{
+  margin-left: 2rem;
+  margin-right: 2rem;
   background-color: var(--light-card);
   height: 22vh;
   margin-top: 30px;
